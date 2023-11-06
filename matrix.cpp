@@ -97,3 +97,20 @@ genericMatrix Matrix::copyMat()
 {
 	return a;
 }
+
+genericMatrix Matrix::matMultiply(genericMatrix n, genericMatrix m)
+{
+	int aColNum = n[0].size(), aRowNum = n.size();
+	int bColNum = m[0].size(), bRowNum = m.size();
+	
+	// Multiplies Matrices if n == m
+	if (aColNum == bRowNum) {
+		// Prepares a matrix
+		genericMatrix newMat;
+		newMat.resize(aRowNum);
+		for (int i = 0; i < aRowNum; i++) {
+			newMat[i].resize(bColNum);
+		}
+	}
+}
+
