@@ -4,19 +4,10 @@ using namespace std;
 
 int main() {
 	Matrix matrix;
-	matrix.randomMatrix(10, 10);
-	matrix.printMatrix();
+	matrix.matPopulate();
+	genericMatrix m = matrix.copyMat();
 
-
-	Matrix oneByone;
-	oneByone.printMatrix();
-	oneByone.a = { {12} };
-	oneByone.printMatrix();
-	cout << endl;
-
-
-
-	 
+	cout << "Determinant of the matrix is :" << matrix.determinant(m);
 
 	return 0;
 }
