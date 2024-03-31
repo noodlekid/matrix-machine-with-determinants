@@ -1,0 +1,1 @@
+A matrix program made in C++ that caluclates determinants using the recursive laplace expansion. Nothing new but it was helpful in checking my work in linear algebra and doubled as a fun project to practice C++.
